@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- fav-icon -->
+    <link
+      rel="shortcut icon"
+      href="assets/github-logo.png"
+      type="image/x-icon"
+    />
+    <title>Home page</title>
+    <!-- css link -->
+    <link rel="stylesheet" href="styles/tailwind.config.css" />
+    <!-- font-awesome icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- tailwind + daisyUI -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+<body class="geist-font">
+    <!-- navbar -->
+    <header class=" ">
+      <div class="navbar bg-base-100 shadow-sm justify-between">
+        <div class="flex items-center pl-20">
+          <img class="w-[30px]" src="assets/github-logo.png" alt="" /><span
+            class="font-bold ml-2"
+            >GitHub Issues Tracker</span
+          >
+        </div>
+        <div class="flex gap-2 pr-20">
+          <input
+            type="text"
+            placeholder="🔍 Search issues..."
+            id="search-input"
+            class="input input-bordered w-24 md:w-auto"
+          />
+          <button onclick="searchIssues()" class="btn btn-primary">
+            <i class="fa-solid fa-plus"></i>New Issue
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- js file -->
+    <script src="JS/script.js"></script>
+  </body>
+</html>
+</body>
+</html>
