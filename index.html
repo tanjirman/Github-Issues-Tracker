@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="assets/github-logo.png" type="image/x-icon">
+    <title>GitHub Issue tracker</title>
+    <!-- tailwind + daisyUI -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- css file link-->
+    <link rel="stylesheet" href="styles/tailwind.config.css" />
+    <!-- google-font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="geist-font">
+    <!-- form -->
+    <section >
+      <div class="hero bg-base-200 min-h-screen">
+        <div class="hero-content flex-col lg:flex-row-reverse space-y-4">
+          <div
+            class="card bg-base-100 w-[500px] max-w-full shrink-0 shadow-2xl"
+          >
+            <div class="text-center mt-10">
+              <img class="mx-auto" src="assets/github-logo.png" alt="" />
+
+              <h2 class="text-3xl font-bold">GitHub Issues Tracker</h2>
+              <p class="text-sm text-gray-400">Sign in to manage your issues</p>
+            </div>
+            <div class="card-body">
+              <form id="login-form" class="form space-y-3">
+                <label class="label text-black">Username</label>
+                <input
+                  type="text"
+                  value="admin"
+                  id="username"
+                  class="input w-full"
+                  placeholder="Enter Username"
+                />
+                <label class="label text-black">Password</label>
+                <input
+                  type="password"
+                  value="admin123"
+                  id="password"
+                  class="input w-full"
+                  placeholder="Enter Password"
+                />
+                <div><a class="link link-hover">Forgot password?</a></div>
+                <!-- connect home page to the button -->
+                <a
+                  href="home.html"
+                  class="btn btn-neutral mt-4 bg-blue-600 border-none w-full"
+                >
+                  Sign IN
+                </a>
+              </form>
+            </div>
+            <!-- or div -->
+
+            <div class="flex items-center gap-3 mx-5">
+              <hr class="grow border-gray-300" />
+              <span class="text-gray-500">OR</span>
+              <hr class="grow border-gray-300" />
+            </div>
+            <!-- Demo Credentials: -->
+            <p class="text-gray-500 text-center">Demo Credentials:</p>
+            <div
+              class="w-11/12 mx-auto bg-sky-50 p-5 mt-5 mb-10 text-center rounded-2xl"
+            >
+              <p class="text-gray-500">Username: admin</p>
+              <p class="text-gray-500">Password: admin123</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- js file link -->
+    <script src="JS/script.js"></script>
+  </body>
+</html>
