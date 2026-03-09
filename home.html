@@ -94,6 +94,24 @@
         id="issue-container"
         class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 p-5"
       ></div>
+    </section><!-- card details -->
+    <section>
+      <!-- modal -->
+      <dialog id="card_modal" class="modal modal-bottom sm:modal-middle">
+        <div class="modal-box">
+          <div id="details-container">
+            <!-- content will be dynamically fetched here -->
+          </div>
+
+          <div class="modal-action">
+            <form method="dialog">
+              <button class="btn bg-blue-600 text-white border-none">
+                Close
+              </button>
+            </form>
+          </div>
+        </div>
+      </dialog>
     </section>
     <!-- js file -->
     <script src="JS/script.js"></script>
